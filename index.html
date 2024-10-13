@@ -53,32 +53,9 @@
         text-decoration: none;
         transition: all 0.3s ease;
         font-weight: 500;
-        position: relative;
-        display: inline-block;
       }
       a:hover {
         color: #fab387;
-      }
-      a::after {
-        content: "_";
-        position: absolute;
-        left: 100%;
-        top: 0;
-        opacity: 0;
-        margin-left: 2px;
-      }
-      p:hover a::after {
-        opacity: 1;
-        animation: blink 0.7s infinite;
-      }
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
       }
     </style>
   </head>
