@@ -54,18 +54,31 @@
         transition: all 0.3s ease;
         font-weight: 500;
       }
-      a:hover {
+      a:hover, a:focus {
         color: #fab387;
+        text-decoration: none;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
       }
     </style>
   </head>
   <body>
-    <div class="content">
+    <main class="content">
+      <h1 class="sr-only">Rodrigo Arias | Web Developer</h1>
       <p>
         This website is like my gym membership – I pay for it but never use it.
         For actual communication, try
         <a href="mailto:hello@arias.me">hello@arias.me</a>
       </p>
-    </div>
+    </main>
   </body>
 </html>
